@@ -5,7 +5,7 @@ FROM centos:latest
 # pipやvirtualenvインストールも想定しています。
 RUN yum -y update
 RUN yum -y groupinstall "Development Tools"
-RUN yum -y install \ 
+RUN yum -y install \
            kernel-devel \
            kernel-headers \
            gcc-c++ \
@@ -34,7 +34,7 @@ RUN yum -y install \
            openssl-devel \
            git \
            gdbm-devel \
-           python-devel 
+           python-devel
 
 # Python3.5.2をインストール
 # Python3.5.2をダウンロード
