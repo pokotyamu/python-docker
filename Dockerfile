@@ -39,11 +39,11 @@ RUN yum -y install \
 # Python3.5.2をインストール
 # Python3.5.2をダウンロード
 WORKDIR /root
-RUN wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz
-RUN tar xzvf Python-3.5.2.tgz
+RUN wget https://www.python.org/ftp/python/3.6.0/Python-3.6.0.tgz
+RUN tar xzvf Python-3.6.0.tgz
 
 # makeでインストール
-WORKDIR ./Python-3.5.2
+WORKDIR ./Python-3.6.0
 RUN ./configure --with-threads
 RUN make install
 
