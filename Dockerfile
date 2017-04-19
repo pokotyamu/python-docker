@@ -60,5 +60,7 @@ RUN pip install virtualenv
 # Djangoインストール
 RUN pip install django
 
-WORKDIR /root
+RUN mkdir work
+WORKDIR /work
+COPY ./hello.py /work
 CMD ["/bin/bash"]
