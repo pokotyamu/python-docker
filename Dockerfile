@@ -60,13 +60,5 @@ RUN pip install virtualenv
 # Djangoインストール
 RUN pip install django
 
-# おまけ
-# Django以外のフレームワークインストール
-# bottleインストール
-# RUN pip install bottle
-
-# Flaskインストール
-# RUN pip install Flask
-
 WORKDIR /root
 CMD ["/bin/bash"]
